@@ -29,3 +29,4 @@
    getline(inoutFile, str_buf, ',');
    ```
    - csv 파일 칼럼 총 7개: index, TITLE, RELEASE_YEAR, SCORE, NUMBER_OF_VOTES, DURATION, MAIN_GENRE, MAIN_PRODUCTION 
+   - getline(파일 객체, 읽어올 변수) 한 번 실행 하면 'index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTION' 라인이 한번에 출력됨.
