@@ -6,20 +6,29 @@
 #define KAGGLEOOP_READ_H
 
 #include <iostream>
-#include <string>
-#include <istream>
 #include <fstream>
+#include <string>
+#include <vector>
+#include <sstream>
 using namespace std;
 
+
 class Read {
-    string filePath;
-
 private:
-    string s;
-    int lineNum;
-public:
-    string getLine();
-};
+    string fileRoot;
+    fstream inoutFile;
+    string str_buf;
+    string line;
+    vector<vector<string>> indexVec;
 
+    //vector<string> csvRow(istream &file, char delimiter);
+public:
+    Read();
+    void ReadWord();
+    void ReadLine();
+    void StoreIndex();
+    ~Read();
+
+};
 
 #endif //KAGGLEOOP_READ_H
