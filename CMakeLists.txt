@@ -3,4 +3,4 @@ project(kaggleOop)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(kaggleOop main.cpp Netflix.cpp Netflix.h Movie.cpp Movie.h RomanceMovie.cpp RomanceMovie.h ComedyMovie.cpp ComedyMovie.h ParseMovie.cpp ParseMovie.h)
+add_executable(kaggleOop main.cpp Netflix.cpp Netflix.h Movie.cpp Movie.h RomanceMovie.cpp RomanceMovie.h ComedyMovie.cpp ComedyMovie.h ParseMovie.cpp ParseMovie.h UI.cpp UI.h)
