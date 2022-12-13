@@ -33,3 +33,4 @@
    - csv 각 요소를 저장하고 싶음(이게 parse랑 같은 의미인가?) 1, 2차원벡터, 배열 중 어떤 것을 사용해야 할까?
    - https://stackoverflow.com/questions/53643509/c-reading-csv-file-into-vectors-whilst-skipping-first-line-and-specific-co
    - 22-12-09 벡터에 값이 올바르게 들어갔는지 확인할 수 없음.
+   - 22-12-12 벡터 값 넣기 성공.

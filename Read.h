@@ -9,17 +9,17 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <unordered_map>
 #include <sstream>
-using namespace std;
 
 
 class Read {
 private:
-    string fileRoot;
-    fstream inoutFile;
-    string str_buf;
-    string line;
-    vector<vector<string>> indexVec;
+    std::string fileRoot;
+    std::fstream inoutFile;
+    std::string str_buf;
+    std::string line;
+    std::vector<std::vector<std::string>> indexVec;
 
     //vector<string> csvRow(istream &file, char delimiter);
 public:
