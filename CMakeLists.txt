@@ -3,4 +3,4 @@ project(kaggleOop)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(kaggleOop main.cpp cmake-build-debug/Stack.cpp cmake-build-debug/Stack.h Title.cpp Title.h Read.cpp Read.h)
+add_executable(kaggleOop main.cpp cmake-build-debug/Stack.cpp cmake-build-debug/Stack.h Read.cpp Read.h Netflix.cpp Netflix.h)

@@ -58,14 +58,14 @@ build CMakeFiles/kaggleOop.dir/Stack.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
 
-build CMakeFiles/kaggleOop.dir/Title.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Title.cpp || cmake_object_order_depends_target_kaggleOop
-  DEP_FILE = CMakeFiles/kaggleOop.dir/Title.cpp.o.d
+build CMakeFiles/kaggleOop.dir/Read.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Read.cpp || cmake_object_order_depends_target_kaggleOop
+  DEP_FILE = CMakeFiles/kaggleOop.dir/Read.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
 
-build CMakeFiles/kaggleOop.dir/Read.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Read.cpp || cmake_object_order_depends_target_kaggleOop
-  DEP_FILE = CMakeFiles/kaggleOop.dir/Read.cpp.o.d
+build CMakeFiles/kaggleOop.dir/Netflix.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Netflix.cpp || cmake_object_order_depends_target_kaggleOop
+  DEP_FILE = CMakeFiles/kaggleOop.dir/Netflix.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
@@ -78,7 +78,7 @@ build CMakeFiles/kaggleOop.dir/Read.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/
 #############################################
 # Link the executable kaggleOop
 
-build kaggleOop: CXX_EXECUTABLE_LINKER__kaggleOop_Debug CMakeFiles/kaggleOop.dir/main.cpp.o CMakeFiles/kaggleOop.dir/Stack.cpp.o CMakeFiles/kaggleOop.dir/Title.cpp.o CMakeFiles/kaggleOop.dir/Read.cpp.o
+build kaggleOop: CXX_EXECUTABLE_LINKER__kaggleOop_Debug CMakeFiles/kaggleOop.dir/main.cpp.o CMakeFiles/kaggleOop.dir/Stack.cpp.o CMakeFiles/kaggleOop.dir/Read.cpp.o CMakeFiles/kaggleOop.dir/Netflix.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   POST_BUILD = :
