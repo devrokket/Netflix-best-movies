@@ -34,3 +34,4 @@
    - https://stackoverflow.com/questions/53643509/c-reading-csv-file-into-vectors-whilst-skipping-first-line-and-specific-co
    - 22-12-09 벡터에 값이 올바르게 들어갔는지 확인할 수 없음.
    - 22-12-12 벡터 값 넣기 성공.
+   - oop 개념인 상속과 다형성을 이해하고 구현하는 데 시간이 많이 소요됐다. 사실 아직도 무슨 말인지 정확히는 모르곘다. 
