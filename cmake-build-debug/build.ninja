@@ -52,20 +52,32 @@ build CMakeFiles/kaggleOop.dir/main.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
 
-build CMakeFiles/kaggleOop.dir/Stack.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/cmake-build-debug/Stack.cpp || cmake_object_order_depends_target_kaggleOop
-  DEP_FILE = CMakeFiles/kaggleOop.dir/Stack.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/kaggleOop.dir
-  OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
-
-build CMakeFiles/kaggleOop.dir/Read.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Read.cpp || cmake_object_order_depends_target_kaggleOop
-  DEP_FILE = CMakeFiles/kaggleOop.dir/Read.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/kaggleOop.dir
-  OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
-
 build CMakeFiles/kaggleOop.dir/Netflix.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Netflix.cpp || cmake_object_order_depends_target_kaggleOop
   DEP_FILE = CMakeFiles/kaggleOop.dir/Netflix.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/kaggleOop.dir
+  OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
+
+build CMakeFiles/kaggleOop.dir/Movie.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/Movie.cpp || cmake_object_order_depends_target_kaggleOop
+  DEP_FILE = CMakeFiles/kaggleOop.dir/Movie.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/kaggleOop.dir
+  OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
+
+build CMakeFiles/kaggleOop.dir/RomanceMovie.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/RomanceMovie.cpp || cmake_object_order_depends_target_kaggleOop
+  DEP_FILE = CMakeFiles/kaggleOop.dir/RomanceMovie.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/kaggleOop.dir
+  OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
+
+build CMakeFiles/kaggleOop.dir/ComedyMovie.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/ComedyMovie.cpp || cmake_object_order_depends_target_kaggleOop
+  DEP_FILE = CMakeFiles/kaggleOop.dir/ComedyMovie.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/kaggleOop.dir
+  OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
+
+build CMakeFiles/kaggleOop.dir/ParseMovie.cpp.o: CXX_COMPILER__kaggleOop_Debug /Users/rocket/CLionProjects/kaggleOop/ParseMovie.cpp || cmake_object_order_depends_target_kaggleOop
+  DEP_FILE = CMakeFiles/kaggleOop.dir/ParseMovie.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   OBJECT_FILE_DIR = CMakeFiles/kaggleOop.dir
@@ -78,7 +90,7 @@ build CMakeFiles/kaggleOop.dir/Netflix.cpp.o: CXX_COMPILER__kaggleOop_Debug /Use
 #############################################
 # Link the executable kaggleOop
 
-build kaggleOop: CXX_EXECUTABLE_LINKER__kaggleOop_Debug CMakeFiles/kaggleOop.dir/main.cpp.o CMakeFiles/kaggleOop.dir/Stack.cpp.o CMakeFiles/kaggleOop.dir/Read.cpp.o CMakeFiles/kaggleOop.dir/Netflix.cpp.o
+build kaggleOop: CXX_EXECUTABLE_LINKER__kaggleOop_Debug CMakeFiles/kaggleOop.dir/main.cpp.o CMakeFiles/kaggleOop.dir/Netflix.cpp.o CMakeFiles/kaggleOop.dir/Movie.cpp.o CMakeFiles/kaggleOop.dir/RomanceMovie.cpp.o CMakeFiles/kaggleOop.dir/ComedyMovie.cpp.o CMakeFiles/kaggleOop.dir/ParseMovie.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   OBJECT_DIR = CMakeFiles/kaggleOop.dir
   POST_BUILD = :
