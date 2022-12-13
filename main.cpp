@@ -6,9 +6,11 @@
 
 std::string fileRoot = "/Users/rocket/CLionProjects/kaggleOop/Best Movies Netflix.csv";
 
+// Base Class
 class Netflix {
 
 public:
+    // 생성자
     Netflix(std::string index, std::string title, std::string year, std::string score, std::string numberOfVotes, std::string duration, std::string genres, std::string production)
             : index(index), title(title), year(year), score(score), numberOfVotes(numberOfVotes), duration(duration), genre(genres), production(production) {}
 
@@ -21,7 +23,16 @@ public:
     std::string getGenre() const {return genre;}
     std::string getProduction() const {return production;}
 
-private:
+
+    // Virtual destructor (required for polymorphism)
+    virtual ~Netflix() = default;
+
+    // Pure virtual function that must be implemented by derived classes --> Netflix를 추상클래스로 만듦.
+    virtual std::string getType() const = 0;
+    // Pure virtual function for printing movie information
+    virtual void printInfo() const = 0;
+
+protected:
     std::string index;
     std::string title;
     std::string year;
@@ -32,8 +43,59 @@ private:
     std::string production;
 };
 
-std::vector<Netflix> parseMovies(std::string filename) {
-    std::vector<Netflix> netflixes;
+class Movie : public Netflix {
+public:
+    Movie(const std::string index, std::string title, std::string year, std::string score, std::string numberOfVotes, std::string duration, std::string genres, std::string production)
+            : Netflix (index, title, year, score, numberOfVotes, duration, genres, production) {}
+
+    // Override the getType() function to return "Regular"
+    std::string getType() const override
+    {
+        return "Romance";
+    }
+
+    void printInfo() const override {
+        std::cout << " movie: " << getTitle() << " (" << getDuration() << " minutes)"
+                  << " produced by " << getProduction() << "\n";
+    }
+
+};
+
+class RomanceMovie : public Netflix {
+    RomanceMovie(const std::string index, std::string title, std::string year, std::string score, std::string numberOfVotes, std::string duration, std::string genres, std::string production)
+        : Netflix (index, title, year, score, numberOfVotes, duration, genres, production) {}
+
+    // Override the getType() function to return "Regular"
+    std::string getType() const override
+    {
+        return "Romance";
+    }
+
+    void printInfo() const override {
+        std::cout << " Romance movie: " << getTitle() << " (" << getDuration() << " minutes)"
+                  << " produced by " << getProduction() << "\n";
+    }
+};
+
+class ComedyMovie : public Netflix {
+    ComedyMovie(const std::string index, std::string title, std::string year, std::string score, std::string numberOfVotes, std::string duration, std::string genres, std::string production)
+            : Netflix (index, title, year, score, numberOfVotes, duration, genres, production) {}
+
+    // Override the getType() function to return "Children's"
+    std::string getType() const override
+    {
+        return "Comedy";
+    }
+
+    void printInfo() const override {
+        std::cout << " movie: " << getTitle() << " (" << getDuration() << " minutes)"
+                  << " produced by " << getProduction() << "\n";
+    }
+
+};
+
+std::vector<Movie> parseMovies(std::string filename) {
+    std::vector<Movie> netflixes;
     std::ifstream movieFile(fileRoot);
 
     if(movieFile.is_open()) {
@@ -58,7 +120,7 @@ std::vector<Netflix> parseMovies(std::string filename) {
             std::getline(ss, production, ',');
 
             // Create a new Movie object with the parsed values
-            Netflix netflix(index, title, year, score, numberOfVotes, duration, genre, production);
+            Movie netflix(index, title, year, score, numberOfVotes, duration, genre, production);
             // Add the new Movie to the vector
             netflixes.push_back(netflix);
         }
@@ -68,10 +130,10 @@ std::vector<Netflix> parseMovies(std::string filename) {
     return netflixes;
 }
 
-std::vector<Netflix> selectByProduction(std::vector<Netflix>& movies, std::string production) {
-    std::vector<Netflix> result;
+std::vector<Movie> selectByProduction(std::vector<Movie>& movies, std::string production) {
+    std::vector<Movie> result;
     std::string usa = "US";
-    for (Netflix movie : movies) {
+    for (Movie movie : movies) {
         if (movie.getProduction() == usa) {
             result.push_back(movie);
         }
@@ -81,10 +143,10 @@ std::vector<Netflix> selectByProduction(std::vector<Netflix>& movies, std::strin
 
 int main() {
     // Call the parseMovies() function to parse the movie data from the file
-    std::vector<Netflix> netflixes = parseMovies(fileRoot);
+    std::vector<Movie> netflixes = parseMovies(fileRoot);
         // Print the details of each movie in the vector
         std::cout << "항목별 출력" << std::endl;
-        for (Netflix movie : netflixes) {
+        for (Movie movie : netflixes) {
             std::cout << "Title: " << movie.getTitle() << std::endl;
             std::cout << "Year: " << movie.getYear() << std::endl;
             std::cout << "Score: " << movie.getScore() << std::endl;
@@ -96,7 +158,7 @@ int main() {
         }
 
         std::cout << "한 줄로 출력" << std::endl;
-        for (Netflix movie: netflixes) {
+        for (Movie movie: netflixes) {
         std::cout << "index: " << movie.getIndex() << "/ title: "
                   << movie.getTitle() << "/ year: " << movie.getYear() << "/ score: " << movie.getScore()
                   << "/ votes: " << movie.getVotes() << "/ genre: " << movie.getGenre() << "/ production: " << movie.getProduction() << std::endl;
