@@ -9,7 +9,7 @@ index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTI
 7,Dangal,2016,8.4,180247,161,action,IN
 8,Bo Burnham: Make Happy,2016,8.4,14356,60,comedy,US
 9,Louis C.K.: Hilarious,2010,8.4,11973,84,comedy,US
-10,Dave Chappelle: Sticks & Stones,2019,8.4,25687,65,comedy,US
+10,Dave Chappelle,2019,8.4,25687,65,comedy,US
 11,3 Idiots,2009,8.4,385782,170,comedy,IN
 12,Black Friday,2004,8.4,20611,143,crime,IN
 13,Super Deluxe,2019,8.4,13680,176,thriller,IN
@@ -120,7 +120,7 @@ index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTI
 118,Wind River,2017,7.7,240408,106,thriller,FR
 119,Oye Lucky! Lucky Oye!,2008,7.7,17411,126,comedy,IN
 120,Dirty Harry,1971,7.7,153463,102,thriller,US
-121,"Jim & Andy: The Great Beyond - Featuring a Very Special, Contractually Obligated Mention of Tony Clifton",2017,7.7,25593,94,comedy,US
+121,"Jim & Andy: The Great Beyond - Featuring a Very Special Contractually Obligated Mention of Tony Clifton",2017,7.7,25593,94,comedy,US
 122,Berserk: The Golden Age Arc II - The Battle for Doldrey,2012,7.7,10257,80,fantasy,JP
 123,Silver Linings Playbook,2012,7.7,697481,122,drama,US
 124,Sanju,2018,7.7,52227,161,drama,IN
@@ -140,7 +140,7 @@ index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTI
 138,Kuch Kuch Hota Hai,1998,7.6,51640,185,drama,IN
 139,Parmanu: The Story of Pokhran,2018,7.6,23771,129,drama,IN
 140,Doctor,2021,7.6,14590,150,thriller,IN
-141,"What Happened, Miss Simone?",2015,7.6,13703,101,musical,US
+141,"What Happened5 Miss Simone?",2015,7.6,13703,101,musical,US
 142,Eddie Murphy Raw,1987,7.6,19646,93,comedy,US
 143,Delhi Belly,2011,7.6,29578,102,comedy,IN
 144,The Boy Who Harnessed the Wind,2019,7.6,36805,113,drama,MW
@@ -173,7 +173,7 @@ index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTI
 171,Dil Se..,1998,7.5,28409,163,drama,IN
 172,Omar,2013,7.5,14230,96,thriller,PS
 173,I Lost My Body,2019,7.5,31531,81,fantasy,FR
-174,"tick, tick... BOOM!",2021,7.5,96418,121,drama,US
+174,tick... BOOM!,2021,7.5,96418,121,drama,US
 175,Coming Soon,2014,7.5,33714,134,drama,TR
 176,Nocturnal Animals,2016,7.5,264884,115,drama,US
 177,A Monster Calls,2016,7.5,86614,108,fantasy,ES
@@ -213,7 +213,7 @@ index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTI
 211,83,2021,7.4,23781,163,drama,IN
 212,Meenakshi Sundareshwar,2021,7.4,17141,141,comedy,IN
 213,Kurup,2021,7.4,11582,155,crime,IN
-214,"Crazy, Stupid, Love.",2011,7.4,507878,118,romance,US
+214,Crazy,2011,7.4,507878,118,romance,US
 215,Schumacher,2021,7.4,21558,112,sports,DE
 216,Guzaarish,2010,7.4,18466,126,drama,IN
 217,What the Health,2017,7.4,28911,97,documentary,US
@@ -225,7 +225,7 @@ index,TITLE,RELEASE_YEAR,SCORE,NUMBER_OF_VOTES,DURATION,MAIN_GENRE,MAIN_PRODUCTI
 223,Life in a Metro,2007,7.4,11934,124,drama,IN
 224,Kabhi Khushi Kabhie Gham,2001,7.4,48818,210,drama,IN
 225,Kaminey,2009,7.4,17136,135,drama,IN
-226,"Girl, Interrupted",1999,7.3,180532,127,drama,US
+226,Girl,1999,7.3,180532,127,drama,US
 227,Talaash,2012,7.3,41752,149,thriller,IN
 228,Starship Troopers,1997,7.3,288960,129,scifi,US
 229,The Guernsey Literary & Potato Peel Pie Society,2018,7.3,44917,124,romance,GB

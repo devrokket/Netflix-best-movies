@@ -3,3 +3,8 @@
 //
 
 #include "RomanceMovie.h"
+
+void RomanceMovie::printInfo() const {
+std::cout << " Romance movie: " << getTitle() << " (" << getDuration() << " minutes)"
+<< " produced by " << getProduction() << "\n";
+}

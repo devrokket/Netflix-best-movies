@@ -6,7 +6,9 @@
 
 int main() {
     UI ui;
-    ui.printCategory();
+    ui.startOption();
+
+
 
 
     return 0;

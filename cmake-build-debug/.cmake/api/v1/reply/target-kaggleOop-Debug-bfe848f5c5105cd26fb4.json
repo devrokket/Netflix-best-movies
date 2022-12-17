@@ -57,8 +57,7 @@
 				3,
 				5,
 				7,
-				9,
-				11
+				9
 			]
 		}
 	],
@@ -96,8 +95,7 @@
 				3,
 				5,
 				7,
-				9,
-				11
+				9
 			]
 		},
 		{
@@ -108,8 +106,7 @@
 				4,
 				6,
 				8,
-				10,
-				12
+				10
 			]
 		}
 	],
@@ -152,17 +149,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "RomanceMovie.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ComedyMovie.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "ComedyMovie.h",
 			"sourceGroupIndex" : 1
 		},
 		{

@@ -7,31 +7,27 @@
 
 #include "Netflix.h"
 #include "Movie.h"
+#include "ParseMovie.h"
 
 class RomanceMovie : public Netflix {
 public:
-    RomanceMovie(const std::string index, std::string title, std::string year, std::string score, std::string numberOfVotes, std::string duration, std::string genres, std::string production)
+    RomanceMovie(const std::string index,std::string numberOfVotes, std::string title, std::string year, std::string score, std::string duration, std::string genres, std::string production)
             : Netflix (index, title, year, score, numberOfVotes, duration, genres, production) {}
 
-    //std::vector<Movie> getRomanceMovie();
+    ParseMovie parseRomance;
 
+    std::string getIndex() const override { return index; };
+    std::string getTitle() const override { return title; };
+    std::string getYear() override { return year; }
+    std::string getScore() const override { return score; }
+    std::string getVotes() const override { return numberOfVotes; }
+    std::string getDuration() const override { return duration; }
+    std::string getGenre() const override { return genre; }
+    std::string getProduction() const override { return production; }
 
-    // Override the getType() function to return "Regular"
-    std::string getType() const override
-    {
-        return "Romance";
-    }
+    NetflixType getNetflixType() const override { return movie; }
 
-    void printInfo() const override {
-        std::cout << " Romance movie: " << getTitle() << " (" << getDuration() << " minutes)"
-                  << " produced by " << getProduction() << "\n";
-    }
-
-    void printIndicate() {
-        RomanceMovie romanceMovie1("214", "Crazy, Stupid, Love,", "2011", "7.4", "1111.111", "93", "romance", "US");
-        std::cout << romanceMovie1.getType() << std::endl;
-        romanceMovie1.printInfo();
-    }
+    void printInfo() const override;
 };
 
 
