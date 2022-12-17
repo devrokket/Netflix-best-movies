@@ -8,8 +8,5 @@ int main() {
     UI ui;
     ui.startOption();
 
-
-
-
     return 0;
 }
