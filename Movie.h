@@ -21,18 +21,8 @@ Movie(const std::string index, std::string title, std::string year, std::string 
     std::string getGenre() const override { return genre; }
     std::string getProduction() const override { return production; }
 
-    // Override the getType() function to return "Regular"
-    NetflixType getNetflixType() const override
-    {
-        std::cout << "This type of Neflix is 'movie'" << std::endl;
-        return movie;
-    }
-
-
-    void printInfo() const override {
-        std::cout << " movie: " << getTitle() << " (" << getDuration() << " minutes)"
-                  << " produced by " << getProduction() << "\n";
-    }
+    NetflixType getNetflixType() const override;
+    void printInfo() const override;
 
 };
 
